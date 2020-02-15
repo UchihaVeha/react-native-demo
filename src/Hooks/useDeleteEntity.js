@@ -22,7 +22,7 @@ export default function useDeleteEntity(collection) {
         }
       }
     },
-    [collection]
+    [collection, isLoading]
   );
   return [isLoading, deleteEntity];
 }

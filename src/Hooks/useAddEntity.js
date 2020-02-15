@@ -22,7 +22,7 @@ export default function useAddEntity(collection) {
         }
       }
     },
-    [collection]
+    [collection, isLoading]
   );
   return [isLoading, addEntity];
 }
